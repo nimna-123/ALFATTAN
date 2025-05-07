@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Email Signature</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @font-face {
+      font-family: 'Aptos';
+      src: url('./fonts/Ubuntu-Bold.ttf') format('woff2'),
+           url('./fonts/Ubuntu-Regular.ttf') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body {
+    font-family: 'Aptos', sans-serif;
+  }
+    </style>
 </head>
 <body class="bg-gray-100 p-6 flex justify-center">
   <div class="w-full max-w-3xl bg-white rounded shadow border border-gray-200 overflow-hidden text-sm font-sans">
@@ -12,8 +25,8 @@
     <!-- Top Header -->
     <div class="flex justify-between items-center bg-gray-100 px-6 py-4">
       <div>
-        <p class="text-red-600 font-bold text-lg tracking-wide">JACKSON ALIAS</p>
-        <p class="text-gray-600 tracking-widest text-xs">LEASING EXECUTIVE</p>
+        <p class="text-red-600 font-bold text-xl  tracking-[0.2em] " style="font-family: Aptos;">JACKSON ALIAS</p>
+        <p class="text-gray-600 tracking-[0.5em] text-xs" style="font-family: Aptos;">LEASING EXECUTIVE</p>
       </div>
       <img src="./images/AFP.png" alt="Al Fattan Logo" class="h-12" />
     </div>
@@ -24,33 +37,45 @@
         <img src="./images/AFPLOGO1.png" alt="Small Logo" class="w-full h-full" />
       </div>
       <div class="space-y-2 text-gray-800">
-        <div class="flex items-center gap-2">
-          <img src="./images/MAIL.png" width="40" height="40" alt="email" />
-          <a href="mailto:michaelalias@alfattan.ae" class="text-[#9b9d9c] font-bold hover:underline">&nbsp;michaelalias@alfattan.ae</a>
+        <div class="flex gap-2">
+          <div class="w-6 flex justify-center pt-1">
+            <i class="fa fa-envelope text-[#9b9d9c] text-lg" aria-hidden="true"></i>
+          </div>
+          <a href="mailto:michaelalias@alfattan.ae" class="text-[#9b9d9c] font-bold hover:underline pt-[8px]">
+            michaelalias@alfattan.ae
+          </a>
         </div>
-        <div class="flex items-center gap-2">
-          <img src="./images/CALL.png" width="28" height="28" alt="phone" class="ml-1" />
-          <span class="ml-3 text-[#9b9d9c] font-bold">05 123 12312 / 041 212 123</span>
+      
+        <div class="flex gap-2">
+          <div class="w-6 flex justify-center pt-1">
+            <i class="fa fa-phone-square text-[#9b9d9c] text-lg" aria-hidden="true"></i>
+          </div>
+          <span class="text-[#9b9d9c] font-bold pt-[8px]">05 123 12312 / 041 212 123</span>
         </div>
-        <div class="flex items-center gap-2">
-          <img src="./images/LOCATION.png" width="30" height="30" alt="location" class="ml-1" />
-          <span class="ml-3 text-[#9b9d9c] font-bold">Al Fattan Lotus Plaza</span>
+      
+        <div class="flex gap-2">
+          <div class="w-6 flex justify-center pt-[2px]">
+            <i class="fa fa-map-marker text-[#9b9d9c] text-lg" aria-hidden="true"></i>
+          </div>
+          <span class="text-[#9b9d9c] font-bold pt-[5px]">Al Fattan Lotus Plaza</span>
         </div>
       </div>
+      
+      
     </div>
 
     <!-- Social + Divider -->
     <div class="flex items-center justify-between px-6 py-2 border-t border-gray-200">
       <div class="w-full h-4 bg-gradient-to-r from-red-600 via-black to-green-500 "></div>
-        <div class="flex items-center gap-2 ml-4">
+        <div class="flex items-center gap-3 ml-4">
     <a href="https://www.instagram.com/alfattan_properties?igsh=MTE4MDhqcnhuYjhmZw==" target="_blank">
-      <img src="./images/INSTA.png" alt="Instagram" class="w-6 h-6 sm:w-8 sm:h-8" />
+        <i class="fa fa-instagram text-[#9b9d9c] text-xl"></i>
     </a>
     <a href="https://www.facebook.com/share/1ERAU3eE5J/?mibextid=wwXIfr" target="_blank">
-      <img src="./images/FB.png" alt="Facebook" class="w-6 h-6 sm:w-8 sm:h-8" />
+        <i class="fa fa-facebook text-[#9b9d9c] text-xl"></i>
     </a>
     <a href="https://www.alfattan.ae/" target="_blank">
-      <img src="./images/WEB.png" alt="Website" class="w-6 h-6 sm:w-8 sm:h-8" />
+        <i class="fa fa-globe text-[#9b9d9c] text-xl"></i>
     </a>
   </div>
 </div>
